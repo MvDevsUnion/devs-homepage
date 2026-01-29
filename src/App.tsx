@@ -6,6 +6,7 @@ import { Features } from "@/components/Features";
 import { Projects } from "@/components/Projects";
 import { Stats } from "@/components/Stats";
 import { Recruitment } from "@/components/Recruitment";
+import { NGO } from "@/components/NGO";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Features />
       <Projects />
+      <NGO />
       <Stats />
       <Recruitment />
       <Contact />

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Code2, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -25,7 +25,7 @@ export function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white/80 backdrop-blur-xl border-b border-neutral-200 shadow-lg shadow-neutral-950/5"
+          ? "bg-neutral-950/80 backdrop-blur-xl border-b border-neutral-800 shadow-lg shadow-neutral-950/20"
           : "bg-transparent"
       }`}
     >
@@ -33,12 +33,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="#" className="flex items-center gap-3 group">
             <div className="relative">
-              <div className="w-9 h-9 rounded-lg bg-brand-500 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                <Code2 className="w-5 h-5 text-white" />
+              <div className="w-9 h-9 rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-110">
+                <img src="/fav.svg" alt="MDU" className="w-full h-full" />
               </div>
               <div className="absolute inset-0 rounded-lg bg-brand-500 blur-lg opacity-30 group-hover:opacity-50 transition-opacity" />
             </div>
-            <span className="font-display font-bold text-lg tracking-tight text-neutral-950">
+            <span className="font-display font-bold text-lg tracking-tight text-white">
               MDU
             </span>
           </a>
@@ -48,7 +48,7 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 text-sm font-medium text-neutral-600 hover:text-neutral-950 transition-colors rounded-lg hover:bg-neutral-100"
+                className="px-4 py-2 text-sm font-medium text-neutral-400 hover:text-white transition-colors rounded-lg hover:bg-neutral-800"
               >
                 {link.label}
               </a>
@@ -59,7 +59,7 @@ export function Navbar() {
             <Button
               variant="outline"
               size="sm"
-              className="border-neutral-300 text-neutral-700 hover:bg-neutral-50 hover:text-neutral-900"
+              className="border-neutral-700 text-neutral-300 hover:bg-neutral-800 hover:text-white"
               asChild
             >
               <a href="https://github.com/MvDevsUnion" target="_blank" rel="noopener noreferrer">
@@ -77,7 +77,7 @@ export function Navbar() {
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 rounded-lg text-neutral-700 hover:bg-neutral-100"
+            className="md:hidden p-2 rounded-lg text-neutral-400 hover:bg-neutral-800"
           >
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -85,20 +85,20 @@ export function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-xl border-b border-neutral-200">
+        <div className="md:hidden bg-neutral-950/95 backdrop-blur-xl border-b border-neutral-800">
           <div className="px-6 py-4 space-y-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block px-4 py-3 text-sm font-medium text-neutral-600 hover:text-neutral-950 rounded-lg hover:bg-neutral-100"
+                className="block px-4 py-3 text-sm font-medium text-neutral-400 hover:text-white rounded-lg hover:bg-neutral-800"
               >
                 {link.label}
               </a>
             ))}
             <div className="pt-3 flex gap-3">
-              <Button variant="outline" size="sm" className="flex-1 border-neutral-300" asChild>
+              <Button variant="outline" size="sm" className="flex-1 border-neutral-700 text-neutral-300" asChild>
                 <a href="https://github.com/MvDevsUnion" target="_blank" rel="noopener noreferrer">
                   GitHub
                 </a>

@@ -80,12 +80,12 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="relative py-32 bg-neutral-50 overflow-hidden">
+    <section id="projects" className="relative py-32 bg-neutral-900 overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage:
-            "radial-gradient(oklch(0.08 0 0) 1px, transparent 1px)",
+            "radial-gradient(oklch(0.98 0 0) 1px, transparent 1px)",
           backgroundSize: "32px 32px",
         }}
       />
@@ -100,15 +100,15 @@ export function Projects() {
         >
           <Badge
             variant="outline"
-            className="mb-6 border-neutral-300 text-neutral-600 bg-white/60"
+            className="mb-6 border-neutral-700 text-neutral-400 bg-neutral-800/60"
           >
             Our Projects
           </Badge>
-          <h2 className="font-display font-bold text-4xl lg:text-5xl tracking-tight text-neutral-950 mb-4">
+          <h2 className="font-display font-bold text-4xl lg:text-5xl tracking-tight text-white mb-4">
             Code that{" "}
             <span className="text-brand-500">holds power accountable</span>
           </h2>
-          <p className="max-w-2xl mx-auto text-neutral-600 text-lg">
+          <p className="max-w-2xl mx-auto text-neutral-400 text-lg">
             Real tools built by the community, solving real problems for
             Maldivians. This is what happens when devs supercharge basic issues
             using code.
@@ -128,22 +128,22 @@ export function Projects() {
                 ease: "easeOut",
               }}
             >
-              <Card className="h-full bg-white border-neutral-200 hover:border-brand-300/50 transition-all duration-300 hover:shadow-xl hover:shadow-brand-500/5 group flex flex-col">
+              <Card className="h-full bg-neutral-800/50 border-neutral-700 hover:border-brand-300/50 transition-all duration-300 hover:shadow-xl hover:shadow-brand-500/5 group flex flex-col">
                 <CardContent className="space-y-4 flex flex-col flex-1">
                   <div className="flex items-start justify-between gap-3">
-                    <div className="w-11 h-11 rounded-xl bg-neutral-100 group-hover:bg-brand-500/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-all duration-300">
-                      <project.icon className="w-5 h-5 text-neutral-700 group-hover:text-brand-500 transition-colors" />
+                    <div className="w-11 h-11 rounded-xl bg-neutral-800 group-hover:bg-brand-500/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-all duration-300">
+                      <project.icon className="w-5 h-5 text-neutral-400 group-hover:text-brand-500 transition-colors" />
                     </div>
                     <Badge
                       variant="outline"
-                      className="text-xs font-mono border-neutral-300 text-neutral-500 bg-neutral-50"
+                      className="text-xs font-mono border-neutral-600 text-neutral-500 bg-neutral-800"
                     >
                       {project.codename}
                     </Badge>
                   </div>
 
                   <div className="flex-1">
-                    <h3 className="font-display font-bold text-lg text-neutral-950 mb-2">
+                    <h3 className="font-display font-bold text-lg text-white mb-2">
                       {project.title}
                     </h3>
                     <p className="text-neutral-500 text-sm leading-relaxed">
@@ -152,11 +152,11 @@ export function Projects() {
                   </div>
 
                   {project.impact && (
-                    <div className="p-3 rounded-lg bg-neutral-50 border border-neutral-200">
+                    <div className="p-3 rounded-lg bg-neutral-900/50 border border-neutral-700">
                       <p className="text-xs font-semibold text-brand-500 uppercase tracking-wider mb-1.5">
                         Impact
                       </p>
-                      <p className="text-neutral-600 text-xs leading-relaxed">
+                      <p className="text-neutral-400 text-xs leading-relaxed">
                         {project.impact}
                       </p>
                     </div>
@@ -165,7 +165,7 @@ export function Projects() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="w-full border-neutral-300 text-neutral-700 hover:bg-neutral-50 hover:border-brand-300/50 mt-auto"
+                    className="w-full border-neutral-700 text-neutral-300 hover:bg-neutral-800 hover:border-brand-300/50 mt-auto"
                     asChild
                   >
                     <a href={project.link} target="_blank" rel="noopener noreferrer">

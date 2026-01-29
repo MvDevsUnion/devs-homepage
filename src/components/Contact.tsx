@@ -6,8 +6,8 @@ import { motion } from "motion/react";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative py-32 bg-white overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-neutral-200/40 rounded-full blur-3xl -translate-y-1/2" />
+    <section id="contact" className="relative py-32 bg-neutral-950 overflow-hidden">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-neutral-700/15 rounded-full blur-3xl -translate-y-1/2" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <motion.div
@@ -18,15 +18,15 @@ export function Contact() {
         >
           <Badge
             variant="outline"
-            className="mb-6 border-neutral-300 text-neutral-600 bg-neutral-50/60"
+            className="mb-6 border-neutral-700 text-neutral-400 bg-neutral-900/60"
           >
             Get Involved
           </Badge>
-          <h2 className="font-display font-bold text-4xl lg:text-5xl tracking-tight text-neutral-950 mb-4">
+          <h2 className="font-display font-bold text-4xl lg:text-5xl tracking-tight text-white mb-4">
             If you care, you{" "}
             <span className="text-brand-500">belong here</span>
           </h2>
-          <p className="max-w-xl mx-auto text-neutral-600 text-lg mb-12">
+          <p className="max-w-xl mx-auto text-neutral-400 text-lg mb-12">
             Developers can contribute code. Non-developers can report issues,
             share feedback, and highlight real-world problems. Every contribution
             matters.
@@ -40,12 +40,12 @@ export function Contact() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           >
-            <Card className="bg-white border-neutral-200 hover:border-brand-300/50 transition-all duration-300 hover:shadow-lg hover:shadow-brand-500/5 group h-full">
+            <Card className="bg-neutral-900/50 border-neutral-800 hover:border-brand-300/50 transition-all duration-300 hover:shadow-lg hover:shadow-brand-500/5 group h-full">
               <CardContent className="text-center py-2">
-                <div className="w-14 h-14 rounded-2xl bg-neutral-100 group-hover:bg-brand-500/10 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-all">
-                  <Github className="w-7 h-7 text-neutral-700 group-hover:text-brand-500 transition-colors" />
+                <div className="w-14 h-14 rounded-2xl bg-neutral-800 group-hover:bg-brand-500/10 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-all">
+                  <Github className="w-7 h-7 text-neutral-400 group-hover:text-brand-500 transition-colors" />
                 </div>
-                <h3 className="font-display font-semibold text-lg text-neutral-950 mb-2">
+                <h3 className="font-display font-semibold text-lg text-white mb-2">
                   Contribute on GitHub
                 </h3>
                 <p className="text-neutral-500 text-sm mb-5">
@@ -70,12 +70,12 @@ export function Contact() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
           >
-            <Card className="bg-white border-neutral-200 hover:border-brand-300/50 transition-all duration-300 hover:shadow-lg hover:shadow-brand-500/5 group h-full">
+            <Card className="bg-neutral-900/50 border-neutral-800 hover:border-brand-300/50 transition-all duration-300 hover:shadow-lg hover:shadow-brand-500/5 group h-full">
               <CardContent className="text-center py-2">
-                <div className="w-14 h-14 rounded-2xl bg-neutral-100 group-hover:bg-brand-500/10 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-all">
-                  <Send className="w-7 h-7 text-neutral-700 group-hover:text-brand-500 transition-colors" />
+                <div className="w-14 h-14 rounded-2xl bg-neutral-800 group-hover:bg-brand-500/10 flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-all">
+                  <Send className="w-7 h-7 text-neutral-400 group-hover:text-brand-500 transition-colors" />
                 </div>
-                <h3 className="font-display font-semibold text-lg text-neutral-950 mb-2">
+                <h3 className="font-display font-semibold text-lg text-white mb-2">
                   Contact Our Rep
                 </h3>
                 <p className="text-neutral-500 text-sm mb-5">
@@ -84,7 +84,7 @@ export function Contact() {
                 <div className="flex gap-3">
                   <Button
                     variant="outline"
-                    className="flex-1 border-neutral-300 text-neutral-700 hover:bg-neutral-50 hover:border-brand-300/50"
+                    className="flex-1 border-neutral-700 text-neutral-300 hover:bg-neutral-800 hover:border-brand-300/50"
                     asChild
                   >
                     <a href="https://x.com/WhoIsFishie" target="_blank" rel="noopener noreferrer">
@@ -94,7 +94,7 @@ export function Contact() {
                   </Button>
                   <Button
                     variant="outline"
-                    className="flex-1 border-neutral-300 text-neutral-700 hover:bg-neutral-50 hover:border-brand-300/50"
+                    className="flex-1 border-neutral-700 text-neutral-300 hover:bg-neutral-800 hover:border-brand-300/50"
                     asChild
                   >
                     <a href="https://t.me/WhoIsFishie" target="_blank" rel="noopener noreferrer">
