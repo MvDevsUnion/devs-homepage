@@ -34,7 +34,7 @@ export function Navbar() {
           <a href="#" className="flex items-center gap-3 group">
             <div className="relative">
               <div className="w-9 h-9 rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-110">
-                <img src="/fav.svg" alt="MDU" className="w-full h-full" />
+                <img src="/devs-homepage/fav.svg" alt="MDU" className="w-full h-full" />
               </div>
               <div className="absolute inset-0 rounded-lg bg-brand-500 blur-lg opacity-30 group-hover:opacity-50 transition-opacity" />
             </div>
